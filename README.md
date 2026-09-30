@@ -1,3 +1,5 @@
+The project is no longer maintained due to Govee blocking easy route to capture traffic through proxy apps without rooting your phone.
+
 # govee-pool-temp-ha
 A script to pull Govee pool thermometer (H5109) data into Home Assistant 
 
@@ -11,3 +13,4 @@ To run the script you need to pass a few parameters
 - SENSOR_NAME is the topic to publish on MQTT
 
 ```docker run --restart=always --name govee-pool-thermometer -e AUTH_TOKEN="Bearer ..." -e MQTT_BROKER="homeassistant" -e MQTT_USER=mqtt -e MQTT_PASSWORD=mqtt -e SENSOR_NAME="backyard/pool/temperature" -d mpiotrowski91/govee-pool-thermometer:latest```
+
